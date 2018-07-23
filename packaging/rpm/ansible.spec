@@ -1,5 +1,5 @@
 %define name ansible
-%define release_date %(date "+%a %b %e %Y")
+%define release_date %(LC_TIME=en_US date "+%a %b %e %Y")
 
 %if 0%{?rhel} == 5
 %define __python2 /usr/bin/python26
